@@ -1,14 +1,8 @@
-**Sol Theme** provides a fun, bright palette:
+**Sol Theme**
 
-![](https://nova.app/images/en/dark/editor.png)
+![](https://github.com/JohnBehnke/sol-nova/blob/main/Sol%20Theme.novaextension/Images/extension/sol-oort-cloud.png)
 
-<!--
-🎈 If your extension provides multiple variations, don't forget to show those too!
--->
-
-Sol Theme also offers a lighter alternative:
-
-![](https://nova.app/images/en/light/editor.png)
+![](https://github.com/JohnBehnke/sol-nova/blob/main/Sol%20Theme.novaextension/Images/extension/sol-heliosphere.png)
 
 ## Acknowledgements
 
