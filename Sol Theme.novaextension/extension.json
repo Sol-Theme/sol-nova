@@ -4,5 +4,8 @@
     "organization": "Behnke Dot Dev",
     "description": "Port of the Sol Theme for Nova",
     "version": "1.0",
-    "categories": ["themes"]
+    "categories": ["themes"],
+    "bugs": "https://github.com/Sol-Theme/sol-nova/issues",
+    "license": "MIT",
+    "repository": "https://github.com/Sol-Theme/sol-nova",
 }
