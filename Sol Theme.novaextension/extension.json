@@ -1,0 +1,8 @@
+{
+    "identifier": "dev.behnke.SolTheme",
+    "name": "Sol Theme",
+    "organization": "Behnke Dot Dev",
+    "description": "Port of the Sol Theme for Nova",
+    "version": "1.0",
+    "categories": ["themes"]
+}

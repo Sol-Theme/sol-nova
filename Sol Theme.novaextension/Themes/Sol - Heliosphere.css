@@ -1,0 +1,339 @@
+meta {
+    -theme-interface-style: light;
+    -theme-vibrancy: true;
+    -theme-accent-color: true;
+}
+
+/*
+:root {
+    --fg: #8A9199;
+    --bg: #F8F9FA;
+    --border: #e9ecee;
+    --accent: #FFAA33;
+    --fg-faded: #8a9199;
+
+    --gutter: #CDCFD3;
+    --gutter-active: #A0A6AD;
+
+    --panel-bg: #f8f9fa;
+    --panel-border: #6b7d8f;
+
+    --button-bg: #ffaa33;
+    --button-bg-active: #8a9199;
+    --button-bg-disabled: #ffe7c7;
+    --button-border: #ffaa33;
+
+    --tag: #96BEC3;
+    --function: #E1970F;
+    --entity: #689DEE;
+    --string: #8DB72E;
+    --regexp: #4CBF88;
+    --markup: #F28779;
+    --keyword: #F3A042;
+    --special: #F6D3AC;
+    --comment: ##989493;
+    --constant: ##937ACC;
+    --operator: #EE9C73;
+    --error: ##E65050;
+}
+*/
+
+
+/*
+ * Window styles
+ */
+meta.window {
+    background-color: #F8F9FA; /* var(--bg) */
+    border-color: #e9ecee; /* var(--border) */
+}
+meta.titlebar {
+    color: #8A9199; /* var(--fg) */
+    background: #f8f9fa; /* var(--panel-bg) */
+    border-color: #6b7d8f1f; /* var(--panel-border) */
+}
+meta.titlebar.inactive {
+    background: #f8f9fa; /* var(--panel-bg) */
+    opacity: 0.8;
+}
+
+meta.button {
+    background-color: #ffaa33; /* var(--button-bg) */
+    border: #ffaa33; /* var(--button-border) */
+    color: #F8F9FA; /* var(--fg) */
+}
+meta.button.highlighted {
+    background-color: #8a9199; /* var(--button-bg-active) */
+    color: #F8F9FA; /* var(--fg) */
+}
+meta.button.selected {
+    color: #F8F9FA; /* var(--fg) */
+}
+meta.button.highlighted.selected {
+    color: #F8F9FA; /* var(--fg) */
+}
+meta.button.disabled {
+    background-color: #ffe7c7; /* var(--button-bg-disabled) */
+    border: #ffe7c7; /* var(--button-border) */
+    opacity: 0.8;
+}
+
+meta.textfield {
+    background-color: #F8F9FA; /* var(--bg) */
+    border-color: #e9ecee; /* var(--border) */
+}
+
+meta.accent {
+    color: #FFAA33; /* var(--accent) */
+}
+
+function.declaration {
+  color: #FF4444;
+}
+
+
+/*
+ * Document styles
+ */
+meta.document {
+    background-color: #F8F9FA; /* var(--bg) */
+    border-color: #e9ecee; /* var(--border) */
+}
+
+meta.document.button {
+    background-color: #ffaa33; /* var(--button-bg) */
+    border: #ffaa33; /* var(--button-border) */
+    color: #F8F9FA; /* var(--fg) */
+}
+meta.document.button.disabled {
+    background-color: #ffe7c7; /* var(--button-bg-disabled) */
+    border: #ffaa33; /* var(--button-border) */
+    opacity: 0.8;
+}
+meta.document.button.highlighted {
+    background-color: #9ca5ae; /* var(--button-bg-active) */
+    color: #8A9199; /* var(--fg) */
+}
+
+meta.document.textfield {
+    background-color: #F8F9FA; /* var(--bg) */
+    border-color: #e9ecee; /* var(--border) */
+}
+
+/* Text */
+meta.text {
+    color: #8A9199; /* var(--fg) */
+}
+meta.text.invisible {
+    color: #8a9199; /* var(--fg-faded) */
+}
+meta.text.selected {
+}
+
+/* Cursor */
+meta.cursor {
+    color: #8A9199; /* var(--fg) */
+}
+
+/* Indentation Guides */
+meta.indentguide {
+    border-color: hsba(220, 10%, 50%, 0.2);
+}
+
+/* Gutter */
+meta.gutter {
+    color: #CDCFD3; /* var(--gutter) */
+}
+meta.gutter.selected {
+    color: #A0A6AD; /* var(--gutter-active) */
+}
+
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+    color: #F3A042; /* var(--keyword) */
+}
+comment {
+    color: ##989493; /* var(--comment) */
+    font-style: italic;
+}
+processing {
+    color: hsb(210, 20%, 50%);
+}
+declaration {
+    color: hsb(210, 20%, 50%);
+}
+bracket {
+    color: hsb(210, 20%, 52%);
+}
+operator {
+    color: #EE9C73; /* var(--operator) */
+}
+invalid {
+    color: ##E65050; /* var(--error) */
+}
+link {
+    color: hsb(210, 60%, 100%);
+
+}
+
+/* Values */
+value.boolean {
+    color: #FFAA33; /* var(--accent) */
+}
+value.null {
+    color: #FFAA33; /* var(--accent) */
+}
+value.number {
+    color: #FFAA33; /* var(--accent) */
+}
+value.entity {
+    color: #689DEE; /* var(--entity) */
+}
+value.symbol {
+    color: #FFAA33; /* var(--accent) */
+}
+
+/* Identifiers */
+identifier.type {
+    color: #689DEE; /* var(--accent) */
+}
+identifier.constant {
+    color: ##937ACC; /* var(--constant) */
+}
+identifier.global, identifier.variable {
+    color: #689DEE; /* var(--accent) */
+}
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+    color: #689DEE; /* var(--function) */
+}
+identifier.key {
+    color: #689DEE; /* var(--function) */
+}
+identifier.argument {
+    color: ##937ACC; /* var(--constant) */
+}
+
+/* Strings */
+string {
+    color: #8DB72E; /* var(--string) */
+}
+string.key {
+    color: #96BEC3; /* var(--tag) */
+}
+string-template {
+    color: #8DB72E; /* var(--string) */
+}
+string-template.value {
+    color: hsb(27, 72%, 100%);
+}
+regex {
+    color: #4CBF88; /* var(--regex) */
+}
+regex.escaped {
+    color: hsb(27, 72%, 99%);
+}
+cdata {
+    color: hsb(210, 60%, 100%);
+}
+
+/* Markup */
+markup.heading {
+    color: hsb(30, 50%, 80%);
+}
+markup.line {
+    color: hsb(60, 50%, 75%);
+}
+markup.bold {
+    color: hsb(196, 60%, 76%);
+    font-weight: bold;
+}
+markup.italic {
+    color: hsb(94, 40%, 80%);
+    font-style: italic;
+}
+markup.strikethrough {
+    color: hsb(0, 60%, 100%);
+}
+markup.list.item {
+    color: hsb(30, 50%, 80%);
+}
+markup.code {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+    font-weight: bold;
+    color: #F6D3AC; /* var(--special) */
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+    color: #E1970F; /* var(--function) */
+}
+
+/* Tags */
+tag {
+    color: #96BEC3; /* var(--tag) */
+}
+tag.framework {
+    color: hsb(258, 40%, 87%);
+}
+tag.attribute.name {
+    color: hsb(95, 54%, 82%);
+}
+tag.attribute.value {
+    color: hsb(5, 62%, 100%);
+}
+tag.attribute.value.link {
+    color: hsb(210, 60%, 100%);
+}
+
+/* Styles */
+style.at {
+    color: hsb(25, 75%, 100%);
+    font-weight: bold;
+}
+style.selector.element {
+    font-weight: bold;
+}
+style.selector.identifier.id {
+    color: hsb(166, 40%, 78%);
+}
+style.selector.identifier.class {
+    color: hsb(258, 40%, 87%);
+}
+style.selector.pseudoclass {
+    color: hsb(258, 40%, 87%);
+}
+style.selector.pseudoelement {
+    color: hsb(166, 40%, 78%);
+}
+style.attribute.name {
+    color: #8DB72E; /* var(--string) */
+}
+style.value.number {
+    color: hsb(249, 45%, 96%);
+}
+style.value.color.hex {
+    color: hsb(249, 45%, 96%);
+}
+style.value.keyword {
+    color: #F3A042; /* var(--keyword) */
+}
+style.value.color.named {
+    color: hsb(210, 60%, 100%);
+}
